@@ -10,6 +10,23 @@ Connected via nodes with a next pointer
 Random access is not allowd
 */
 
+/*
+TIME COMPLEXITY
+
+Insertion - O(1)
+Removal - It depends O(1) or O(n)
+Searching - O(n)
+Access - O(n)
+*/
+
+/*
+Summary
+
+SLL is excellent alternative to arrays in insertion and deletion
+Array contains built in indexes but SLL not
+This List DS consists of nodes which is foundation for other DS like Stacks and Queues
+*/
+
 // piece of data - val
 // reference to next node - next
 
