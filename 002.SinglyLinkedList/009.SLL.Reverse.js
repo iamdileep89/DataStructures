@@ -1,5 +1,7 @@
 /*
 Reverse a singly LL in place
+Must see a video representation in youtube link below to understand the flow
+https://www.youtube.com/watch?v=UCv-EmtvPe4
 */
 
 /*
@@ -148,6 +150,20 @@ class SinglyLinkedList {
             prev = node
             node = next
         }
+        return this
+    }
+    reverse1(){
+        var prev = null // declare a variable with null to assign it to new tails next
+        var next = null // declare a varibale next to keep track of current nodes
+        var node = this.head
+
+        while(node !== null){
+            next = node.next // store/keep reference of node's next in next variable
+            node.next = prev // assign the next of node to prev(null initially)
+            prev = node // set prev as current node
+            node = next // now current node becomes the next of earlier node since we are moving forward in list
+        }
+        this.head = prev
         return this
     }
 }
