@@ -1,8 +1,18 @@
 /*
-Doubly Linked List is almost similar to the SLL but every node has another pointer, to the previous node
-DLL's use more memory then SLL
+Doubly Linked List is almost similar to the SLL but every node has another/extra pointer, pointing to the previous node
+DLL's use more memory than SLL
+Better then SLL for finding nodes etc.,
 */
 
+
+/*
+TIME COMPLEXITY
+
+Insertion -- O(1)
+Removal -- O(1)
+Searching -- O(N/2) ==== O(N)
+Access -- O(N)
+*/
 
 class Node {
     constructor(val){

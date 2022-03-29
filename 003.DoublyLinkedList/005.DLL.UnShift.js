@@ -1,16 +1,18 @@
-/* Remove a node at the beginning of DLL */
+/* Add a node at the beginning of DLL */
 
 /* 
 PSEUDOCODE
 
-If length is 0, return undefined
-Store the current head in a variable
-If length is 1, set head and tail to be null, since the DLL is empty if we remove that 1 item
-If length >1, update head to be next of old head
-set new head's prev to null
-set old head's next to null
-decrement length
-return old head
+Create a new node with the given value
+If 
+  the length is 0, set head and tail to be new Node
+Else
+  set prev of current head as new Node
+  set next of new node to be head
+  set head as new Node
+
+Increment length
+Return the DLL 
 
 */
 
@@ -71,6 +73,20 @@ class DoublyLinkedList {
         this.length--
         return oldHead
     }
+    unshift(val){
+        var newNode = new Node(val);
+        if(this.length === 0){
+            this.head = newNode;
+            this.tail = newNode;
+
+        } else {
+            this.head.prev = newNode
+            newNode.next = this.head
+            this.head = newNode
+        }
+        this.length++
+        return this
+    }
 }
 
 var list = new DoublyLinkedList()
@@ -78,4 +94,4 @@ list.push(100)
 list.push(101)
 list.push(102)
 list.push(103)
-list.shift()
+list.unshift(99)
