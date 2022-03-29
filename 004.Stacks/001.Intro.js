@@ -1,16 +1,25 @@
 /*
 A LIFO data structure - Last In First Out
 Last element added to the stack will the removed from the stack first
-  Eg: JavaScript Callstack, Undo/Redo, Routing (React Router)
+  Eg: JavaScript Callstack, Undo/Redo, Routing (web page history back/forward)
 
 There is more then one way to implement stacks.
 We can implement using LinkedLists, Arrays etc
+No built in stack in JavaScript
+*/
 
+/*
+TIME COMPLEXITY
+
+Insertion - O(1) // since add at beginning
+Removal - O(1) // Since removing at beginning
+Searching - O(n)
+Access - O(n)
 
 */
 
 
-/* Array Implementation */
+/* Array Implementation - 1 */
 
 var stack1 = []
 stack1.push("google")
@@ -24,6 +33,7 @@ stack1.pop() // "instagram"
 stack1.pop() // "google"
 
 
+/* Array Implementation - 2 */
 var stack2 = []
 stack2.unshift("google")
 stack2.unshift("instagram")
