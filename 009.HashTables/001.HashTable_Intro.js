@@ -26,3 +26,10 @@ Eg: human readable keys in colors hash table
 */
 
 
+/*
+TIME COMPLEXITY
+
+In general Avg case: Insert, Deletion, Access/Search --> O(1)
+Worst Case : O(n)
+
+*/
