@@ -15,7 +15,7 @@ In a MinBinaryHeap, parent nodes are always smaller than child nodes
     39          33
  18    27    12     
 
-Binay Heap array = [41, 39, 33, 18, 27, 12]
+Binary Heap array = [41, 39, 33, 18, 27, 12]
 
 */
 
