@@ -39,5 +39,5 @@ Adjacency List:
   E: ["C", "D", "F"]
   F: ["D", "E"]
 
-Traversal Result = [A, B, D, E, C, F]
+Traversal Result = [A, B, D, E, C, F] or ["A", "C", "E", "F", "D", "B"]
 */
